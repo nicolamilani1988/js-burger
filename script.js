@@ -5,7 +5,7 @@ for (var i=0; i<lis.length;i++){
   var li = lis[i];
   li.addEventListener("click", function(){
 
-    console.log(this, this.children[2]);
+    // console.log(this, this.children[2]);
 
     var checkboxChecked = this.children[2];
 
@@ -19,9 +19,10 @@ for (var i=0; i<lis.length;i++){
 }
 
 
-
 // funzioni bottone Calcolo
 var calculateBtn = document.getElementById("calculate");
+var coupons = ["mucca","pecora","cane","gatto"];
+
 
 // evento da scatenare al click del button calculate
 calculateBtn.addEventListener("click", function(){
@@ -48,19 +49,28 @@ calculateBtn.addEventListener("click", function(){
     }
 
     // calcolo sconto coupon
-    var coupons = ["mucca","pecora","cane","gatto"];
     var couponUser = document.getElementById("coupon").value;
     // METODO LUNGO
     // for(i=0;i<coupons.length;i++){
     //   var coupon = coupons[i];
-    //   if(couponUser == coupons[i]){
+    //   if(couponUser == coupon){
     //     price = parseFloat((price*0.8).toFixed(2));
     //   }
     // }
+
+
     // METODO CORTO
     if(coupons.includes(couponUser)){
       price = parseFloat((price*0.8).toFixed(2));
+      var index = coupons.indexOf(couponUser);
+      coupons.splice(index,1,"non piu valido");
+    } else if (couponUser.length<1) {
+      price = price;
+    } else{
+      alert("Coupon non valido");
     }
+
+    console.log(coupons);
 
     document.getElementById("price").innerHTML = price;
 
