@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Burger</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- titolo -->
+      <header>
+        <h1>Create your Burger</h1>
+      </header>
+      <!-- corpo centrale -->
+      <main>
+        <!-- inserimento nome panino -->
+        <input type="text" id="burger-name" name="" value="" placeholder="nome panino">
+        <!-- inserimento ingredienti -->
+        <h2>Ingredients</h2>
+        <!-- lista ingredienti -->
+        <ul>
+          <li>
+            <img src="" alt="">
+            <input id="formaggio" class="ingred" type="checkbox" name="" data-price="2">
+            <span>Formaggio</span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <input id="uova" class="ingred"  type="checkbox" name="" data-price="3">
+            <span>Uova</span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <input id="mostarda" class="ingred"  type="checkbox" name="" data-price="4">
+            <span>Mostarda</span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <input id="pomodoro" class="ingred"  type="checkbox" name="" data-price="6">
+            <span>Pomodoro</span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <input id="lattuga" class="ingred"  type="checkbox" name="" data-price="1">
+            <span>Lattuga</span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <input id="ketchup" class="ingred"  type="checkbox" name="" data-price="2">
+            <span>Ketchup</span>
+          </li>
+        </ul>
+        <!-- inserimento coupon -->
+        <div class="">
+          <label for="coupon">Coupon</label>
+          <input id="coupon" type="text" name="coupon" value="" placeholder="coupon">
+        </div>
+        <!-- bottone per calcolare prezzo -->
+        <button id="calculate" type="button" name="button">Calcola prezzo</button>
+
+      </main>
+      <!-- prezzo finale -->
+      <footer>
+        <span>Prezzo</span>
+        <span>
+          <span>€</span>
+          <span id="price">10</span>
+        </span>
+
+      </footer>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>
