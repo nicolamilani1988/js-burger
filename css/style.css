@@ -1,0 +1,45 @@
+/* regole generali */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+  display: flex;
+}
+
+.container>div:first-child{
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+.container>div:last-child{
+  background-color: pink;
+  width: 200px;
+}
+
+/* regole header */
+header{
+  background-color: #FDBB40;
+  padding: 50px 50px 20px;
+}
+
+/* regole main */
+main{
+  padding: 50px;
+}
+
+main ul li{
+  list-style-type: none;
+}
+
+/* regole footer */
+footer{
+  padding: 30px 50px;
+  background-color: #BC3B5A;
+}
