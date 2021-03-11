@@ -27,12 +27,17 @@ calculateBtn.addEventListener("click", function(){
 
     // calcolo sconto coupon
     var coupons = ["mucca","pecora","cane","gatto"];
-    var couponValue = document.getElementById("coupon").value;
-    for(i=0;i<coupons.length;i++){
-      var coupon = coupons[i];
-      if(couponValue == coupons[i]){
-        price = parseFloat((price*0.8).toFixed(2));
-      }
+    var couponUser = document.getElementById("coupon").value;
+    // METODO LUNGO
+    // for(i=0;i<coupons.length;i++){
+    //   var coupon = coupons[i];
+    //   if(couponUser == coupons[i]){
+    //     price = parseFloat((price*0.8).toFixed(2));
+    //   }
+    // }
+    // METODO CORTO
+    if(coupons.includes(couponUser)){
+      price = parseFloat((price*0.8).toFixed(2));
     }
 
     document.getElementById("price").innerHTML = price;
