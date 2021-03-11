@@ -31,7 +31,7 @@ calculateBtn.addEventListener("click", function(){
     for(i=0;i<coupons.length;i++){
       var coupon = coupons[i];
       if(couponValue == coupons[i]){
-        price = price*0.8;
+        price = parseFloat((price*0.8).toFixed(2));
       }
     }
 
