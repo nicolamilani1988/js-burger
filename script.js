@@ -1,3 +1,25 @@
+// togliere la spunta alla checkbox e darla al resto del li
+var lis = document.getElementsByTagName("li");
+
+for (var i=0; i<lis.length;i++){
+  var li = lis[i];
+  li.addEventListener("click", function(){
+
+    console.log(this, this.children[2]);
+
+    var checkboxChecked = this.children[2];
+
+    if(checkboxChecked.checked){
+      checkboxChecked.checked = false;
+    } else {
+      checkboxChecked.checked=true;
+    }
+
+  })
+}
+
+
+
 // funzioni bottone Calcolo
 var calculateBtn = document.getElementById("calculate");
 
