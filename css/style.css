@@ -19,7 +19,7 @@ body{
 }
 
 .container>div:last-child{
-  background-color: pink;
+  background-color: #FEF4E4;
   width: 200px;
 }
 
@@ -34,12 +34,72 @@ main{
   padding: 50px;
 }
 
+h2{
+  margin: 20px 0;
+}
+
+/* regole nome panino */
+main>input:first-child{
+  font-size: 1.2rem;
+  border: none;
+  padding: 5px 0;
+}
+
+/* regole ingredienti */
+main ul{
+  display: flex;
+  margin-bottom: 50px;
+}
+
 main ul li{
   list-style-type: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
+
+main ul li>*{
+  margin-right: 10px;
+}
+
+/* regole calcolo coupon */
+main>div:nth-child(4){
+  text-align: center;
+  display: flex;
+}
+
+main>div:nth-child(4)>input{
+  flex-grow: 1;
+  margin-left: 30px;
+  background-color: #FEF4E4;
+  border: 1px solid #FEF4E4;
+  border-radius: 2px;
+}
+
+main>div:last-child{
+  text-align: center;
+  margin-top: 50px;
+}
+
+main>div:last-child>button{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #FDBB40;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #FDBB40;
+}
+
+
 
 /* regole footer */
 footer{
   padding: 30px 50px;
   background-color: #BC3B5A;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }

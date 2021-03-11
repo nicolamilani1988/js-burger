@@ -21,58 +21,60 @@
         <!-- corpo centrale -->
         <main>
           <!-- inserimento nome panino -->
-          <input type="text" id="burger-name" name="" value="" placeholder="nome panino">
+          <input type="text" id="burger-name" name="" value="" placeholder="Name your burger">
           <!-- inserimento ingredienti -->
           <h2>Ingredients</h2>
           <!-- lista ingredienti -->
           <ul>
             <li>
-              <img src="" alt="">
-              <input id="formaggio" class="ingred" type="checkbox" name="" data-price="2">
+              <img src="./img/cheese.svg" alt="" width="30px">
               <span>Formaggio</span>
+              <input id="formaggio" class="ingred" type="checkbox" name="" data-price="2">
             </li>
             <li>
-              <img src="" alt="">
-              <input id="uova" class="ingred"  type="checkbox" name="" data-price="3">
+              <img src="./img/fried-egg.svg" alt="" width="30px">
               <span>Uova</span>
+              <input id="uova" class="ingred"  type="checkbox" name="" data-price="3">
             </li>
             <li>
-              <img src="" alt="">
-              <input id="mostarda" class="ingred"  type="checkbox" name="" data-price="4">
+              <img src="./img/mustard.svg" alt="" width="30px">
               <span>Mostarda</span>
+              <input id="mostarda" class="ingred"  type="checkbox" name="" data-price="4">
             </li>
             <li>
-              <img src="" alt="">
-              <input id="pomodoro" class="ingred"  type="checkbox" name="" data-price="6">
+              <img src="./img/tomato.svg" alt="" width="30px">
               <span>Pomodoro</span>
+              <input id="pomodoro" class="ingred"  type="checkbox" name="" data-price="6">
             </li>
             <li>
-              <img src="" alt="">
-              <input id="lattuga" class="ingred"  type="checkbox" name="" data-price="1">
+              <img src="./img/lettuce.svg" alt="" width="30px">
               <span>Lattuga</span>
+              <input id="lattuga" class="ingred"  type="checkbox" name="" data-price="1">
             </li>
             <li>
-              <img src="" alt="">
-              <input id="ketchup" class="ingred"  type="checkbox" name="" data-price="2">
+              <img src="./img/ketchup.svg" alt="" width="30px">
               <span>Ketchup</span>
+              <input id="ketchup" class="ingred"  type="checkbox" name="" data-price="2">
             </li>
           </ul>
           <!-- inserimento coupon -->
           <div class="">
-            <label for="coupon">Coupon</label>
+            <label for="coupon">Discount coupon</label>
             <input id="coupon" type="text" name="coupon" value="" placeholder="coupon">
           </div>
           <!-- bottone per calcolare prezzo -->
-          <button id="calculate" type="button" name="button">Calcola prezzo</button>
+          <div class="">
+            <button id="calculate" type="button" name="button">Calculate</button>
+          </div>
 
         </main>
         <!-- prezzo finale -->
         <footer>
-          <span>Prezzo</span>
-          <span>
+          <div>Prezzo</div>
+          <div>
             <span>€</span>
             <span id="price">10</span>
-          </span>
+          </div>
 
         </footer>
 
